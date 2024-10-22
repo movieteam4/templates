@@ -1,0 +1,96 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>Team 4</title>
+
+   <!-- Bootstrap core CSS -->
+   <link href="https://cdn.jsdelivr.net/gh/movieteam4/style@refs/heads/main/bootstrap.min.css" rel="stylesheet">
+
+   <!-- Additional CSS Files -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/movieteam4/style@refs/heads/main/fontawesome.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/movieteam4/style@refs/heads/main/templatemo-lugx-gaming.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/movieteam4/style@refs/heads/main/owl.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/movieteam4/style@refs/heads/main/animate.css">
+   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+   <!-- TemplateMo 589 lugx gaming -->
+  </head>
+
+  <body>
+    <!-- ***** Preloader Start ***** -->
+    <div id="js-preloader" class="js-preloader">
+      <div class="preloader-inner">
+        <span class="dot"></span>
+        <div class="dots">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <script>
+      window.onload = function () {
+        const preloader = document.getElementById('js-preloader');
+        if (preloader) {
+          preloader.style.display = 'none'; // Hide the preloader
+        }
+      }
+    </script>
+    <!-- ***** Preloader End ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="{% url 'Taiwan_movies_all' %}" class="logo">
+                            <img src="https://raw.githubusercontent.com/movieteam4/img/refs/heads/main/logo.png" alt="" style="width: 158px;">
+                        </a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                          {% comment %} <li>
+                            <div class="search-input">
+                              <form id="search" action="#">
+                                <input type="text" placeholder="電影搜尋" id='searchText' name="searchKeyword" onkeypress="handle" />
+                                <button role="button" style="background-color: white; color: black;">
+                                  <i class="fas fa-search" style="font-size: 20px;"></i>
+                                </button>
+                              </form>
+                            </div>
+                          </li> {% endcomment %}
+                          <li><a href="{% url 'Taiwan_movies_all' %}">Home</a></li>
+                        </ul>
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+      </header>
+      <div class="main-banner">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 align-self-center">
+              <div class="caption header-text">
+                <img src='https://raw.githubusercontent.com/movieteam4/img/refs/heads/main/Line_QR.png' style='height:172px; width:172px'>
+                <h5 style="font-size: 24px" >請掃描QR Code</h5>
+              </div>
+              <p style="font-size: 24px">加入我們的官方Line<br>獲得及時最新電影推薦</p>
+            </div>
+
+            <!-- 将 col-lg-4 offset-lg-2 移到 row 内部 -->
+            <div class="col-lg-4 offset-lg-2">
+              <div class="right-image">
+                <span class="price">Team&nbsp;4<br>宏碁班第4組專題<br>電影自動化推薦系統</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
